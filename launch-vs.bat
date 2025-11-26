@@ -59,7 +59,7 @@ REM === Create the .settings file ===
 
 REM === Launch VS Code ===
 pushd "%WORKSPACE_DIR%"
-SET "COMMAND=code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --install-extension ms-vscode.live-server --force"
+SET "COMMAND=code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --install-extension ritwickdey.LiveServer --force"
 echo %COMMAND%
 call %COMMAND%
 
@@ -68,13 +68,21 @@ REM === Create the .settings file ===
     echo  {
     echo      "extensions.allowed": {
     echo        "glenn2223.live-sass": true,
-    echo        "ms-vscode.live-server": true
+    echo        "ritwickdey.LiveServer": true
     echo      },
     echo      "editor.fontSize": 14,
     echo      "editor.mouseWheelZoom": true,
     echo      "editor.formatOnType": true,
     echo      "security.workspace.trust.untrustedFiles": "open",
-    echo      "chat.disableAIFeatures": true
+    echo      "chat.disableAIFeatures": true,
+    echo      "workbench.colorCustomizations": {
+    echo        "activityBar.background": "#3f7467" ,
+    echo        "activityBar.foreground": "#3f7467" ,
+    echo        "activityBar.activeBackground": "#ffab0d", 
+    echo        "activityBar.activeBorder": "#FFD700",
+    echo        "activityBar.inactiveForeground": "#FFD700",
+    echo        "activityBar.border": "#fff"
+    echo      }
     echo  }
 ) > "%WORKSPACE_DIR%\user-data\User\settings.json"
 
