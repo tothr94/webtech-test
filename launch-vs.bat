@@ -59,35 +59,10 @@ REM === Create the .settings file ===
     echo  }
 ) > "%VS_CODE_FOLDER%\settings.json"
 
-REM === Create the c_cpp_properties.json file ===
-(
-    echo   {
-    echo     "configurations": [
-    echo       {
-    echo         "name": "Win32",
-    echo         "includePath": [
-echo                "C:/MinGW/include"
-    echo         ],
-    echo         "defines": [],
-    echo         "compilerPath": "C:/MinGW/bin/gcc.exe",
-    echo         "cStandard": "c99",
-    echo         "intelliSenseMode": "gcc-x86",
-    echo         "browse": {
-    echo           "path": [
-    echo             "C:/MinGW/include"
-    echo           ],
-    echo           "limitSymbolsToIncludedHeaders": true
-    echo         }
-    echo       }
-    echo     ],
-    echo     "version": 4
-    echo   }
-) > "%VS_CODE_FOLDER%\c_cpp_properties.json"
-
 REM === Launch VS Code ===
 pushd "%WORKSPACE_DIR%"
-echo code --extensions-dir extensions --user-data-dir user-data --install-extension ms-vscode.cpptools --disable-extension GitHub.copilot --force
-call code --extensions-dir extensions --user-data-dir user-data --install-extension ms-vscode.cpptools --disable-extension GitHub.copilot --force
+echo code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --disable-extension GitHub.copilot --force
+call code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --disable-extension GitHub.copilot --force
 
 REM === Create the .settings file ===
 (
