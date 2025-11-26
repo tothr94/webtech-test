@@ -72,7 +72,9 @@ REM === Create the .settings file ===
     echo      },
     echo      "editor.fontSize": 14,
     echo      "editor.mouseWheelZoom": true,
-    echo      "editor.formatOnType": true
+    echo      "editor.formatOnType": true,
+    echo      "security.workspace.trust.untrustedFiles": "open",
+    echo      "chat.disableAIFeatures": true
     echo  }
 ) > "%WORKSPACE_DIR%\user-data\User\settings.json"
 
