@@ -76,8 +76,8 @@ REM === Create the .settings file ===
     echo      "security.workspace.trust.untrustedFiles": "open",
     echo      "chat.disableAIFeatures": true,
     echo      "workbench.colorCustomizations": {
-    echo        "activityBar.background": "#3f7467" ,
-    echo        "activityBar.foreground": "#3f7467" ,
+    echo        "activityBar.background": "#3f7467",
+    echo        "activityBar.foreground": "#e1e8e6",
     echo        "activityBar.activeBackground": "#ffab0d", 
     echo        "activityBar.activeBorder": "#FFD700",
     echo        "activityBar.inactiveForeground": "#FFD700",
