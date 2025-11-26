@@ -59,8 +59,9 @@ REM === Create the .settings file ===
 
 REM === Launch VS Code ===
 pushd "%WORKSPACE_DIR%"
-echo code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --disable-extension GitHub.copilot --force
-call code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --disable-extension GitHub.copilot --force
+SET "COMMAND=code --extensions-dir extensions --user-data-dir user-data --install-extension glenn2223.live-sass --install-extension ms-vscode.live-server --force"
+echo %COMMAND%
+call %COMMAND%
 
 REM === Create the .settings file ===
 (
