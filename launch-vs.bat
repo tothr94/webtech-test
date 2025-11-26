@@ -54,8 +54,6 @@ REM === Create the .code-workspace file ===
 REM === Create the .settings file ===
 (
     echo  {
-    echo    "C_Cpp.default.compilerPath": "C:/MinGW/bin/gcc.exe",
-    echo    "C_Cpp.intelliSenseEngine": "default"
     echo  }
 ) > "%VS_CODE_FOLDER%\settings.json"
 
@@ -68,7 +66,7 @@ REM === Create the .settings file ===
 (
     echo  {
     echo      "extensions.allowed": {
-    echo        "ms-vscode.cpptools": true,
+    echo        "glenn2223.live-sass": true
     echo      },
     echo      "editor.fontSize": 14,
     echo      "editor.mouseWheelZoom": true,
