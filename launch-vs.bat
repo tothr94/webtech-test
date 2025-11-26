@@ -67,7 +67,8 @@ REM === Create the .settings file ===
 (
     echo  {
     echo      "extensions.allowed": {
-    echo        "glenn2223.live-sass": true
+    echo        "glenn2223.live-sass": true,
+    echo        "ms-vscode.live-server": true
     echo      },
     echo      "editor.fontSize": 14,
     echo      "editor.mouseWheelZoom": true,
